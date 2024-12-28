@@ -17,7 +17,7 @@ module.exports = defineConfig({
       });
       return config;
     },
-    // (Optional) If you use MochaAwesome:
+    //Configuring MochaAwesome:
     reporter: 'mochawesome',
     reporterOptions: {
       reportDir: 'cypress/reports',
