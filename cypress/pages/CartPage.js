@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 
 class CartPage {
   goToCheckout() {
-    // Example: "Proceed To Checkout" button
+    // "Proceed To Checkout" button
     cy.contains('Proceed To Checkout').click();
   }
 
@@ -17,7 +17,7 @@ class CartPage {
     const expiryMonth = faker.number.int({ min: 1, max: 12 }).toString().padStart(2, '0');
     const expiryYear = faker.date.future().getFullYear().toString(); // e.g. "2027"
 
-    // Example selectors - update these to match your DOM
+    //Payment selectors
     cy.get('[data-qa="name-on-card"]').type(nameOnCard);
     cy.get('[data-qa="card-number"]').type(cardNumber);
     cy.get('[data-qa="cvc"]').type(cvc);
