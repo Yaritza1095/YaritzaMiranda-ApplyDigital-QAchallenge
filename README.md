@@ -167,5 +167,4 @@ npx mochawesome-report-generator cypress/reports/report.json
 
 ---
 
-**Happy Testing! 🧪🚀**
 
