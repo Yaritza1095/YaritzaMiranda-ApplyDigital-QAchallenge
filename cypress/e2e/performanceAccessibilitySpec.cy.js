@@ -5,7 +5,6 @@ describe('Home Page - Lighthouse (Desktop & Mobile)', () => {
     // Visit
     cy.visit('https://automationexercise.com/');
     
-    // Now this should work:
     cy.lighthouse(
       {
         performance: 80,
