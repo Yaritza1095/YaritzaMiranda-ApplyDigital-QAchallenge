@@ -7,7 +7,7 @@ import CartPage from '../pages/CartPage';
 import LoginRegisterPage from '../pages/LoginRegisterPage';
 
 import { faker } from '@faker-js/faker';
-import 'cypress-xpath'; // If you're using XPath for the "View Cart" popup
+import 'cypress-xpath'; // for view cart locator
 
 describe('Automation Exercise - E2E Flow (Desktop & Mobile)', () => {
   const homePage = new HomePage();
@@ -16,7 +16,6 @@ describe('Automation Exercise - E2E Flow (Desktop & Mobile)', () => {
   const productDetailsPage = new ProductDetailsPage();
   const cartPage = new CartPage();
 
-  // You can still keep these flags if you want to turn features on/off
   const enableLogout = true;
 
   it('Desktop Flow', () => {
