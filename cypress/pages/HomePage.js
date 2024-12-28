@@ -11,7 +11,7 @@ class HomePage {
         .click();
     }
   
-    // If the site has a top nav link labeled "Signup / Login"
+    // the site has a top nav link labeled "Signup / Login"
     goToSignupOrLogin() {
       cy.get('.shop-menu .nav > li')
         .contains('Signup / Login')
