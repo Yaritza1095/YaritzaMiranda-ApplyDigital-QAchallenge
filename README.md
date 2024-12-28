@@ -57,6 +57,9 @@ The automation exercise spec includes the following scenarios:
 ## **4. Running Tests**
 
 ### **4.1 In Headless Mode**
+```bash
+npx cypress run
+```
 Runs all specs (functional + performance). Results are output in the terminal, plus `.json` test artifacts in `cypress/reports/` (using MochaAwesome).
 
 ### **4.2 Interactive Mode**
